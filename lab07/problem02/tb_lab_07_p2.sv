@@ -21,7 +21,7 @@ lab_07_p2 dut0(.clk(clk), .reset(reset), .we(we), .waddr(waddr), .wbdata(wbdata)
         clk <= 0; #5; clk <= 1; #5;
     end
 
-    // sadece oku
+    //read
     initial
     begin
         we = 0; reset = 0; wbdata = 32'b0;
